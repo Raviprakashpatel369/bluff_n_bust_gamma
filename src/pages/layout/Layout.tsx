@@ -12,8 +12,8 @@ const Layout = () => {
           <ul className={styles.navbarLinks}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/profile/1">Profile</Link></li>
+            <li><Link to="/players">Players</Link></li>
+            <li><Link to="/start">Start</Link></li>
           </ul>
         </nav>
       </header>
