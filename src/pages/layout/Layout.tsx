@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
-import styles from './Layout.module.css'; // Import the CSS module
+import styles from './Layout.module.css'; 
+import logo from './../../assets/logo-removebg-preview.png';
 
 const Layout = () => {
   return (
@@ -7,13 +8,13 @@ const Layout = () => {
       <header>
         <nav className={styles.navbar}>
           <div className={styles.navbarLogo}>
-            <h1>Bluff n Bust</h1>
+            <img src={logo} style={{ width: '60px', height: '60px' }} alt="logo" />
           </div>
           <ul className={styles.navbarLinks}>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/players">Players</Link></li>
-            <li><Link to="/start">Start</Link></li>
+            <li><Link to="/">About</Link></li>
+            <li><Link to="/">Players</Link></li>
+            <li><Link to="/">Start</Link></li>
           </ul>
         </nav>
       </header>
